@@ -20,9 +20,9 @@ const updateStyling = (batteryPercentage, isCharging) => {
   let contentStyle = JSON.parse(JSON.stringify(content));
   let arrowStyle = JSON.parse(JSON.stringify(arrow));
   if (isCharging === true) {
-    contentStyle.background = 'rgba(163, 189, 140, 1)';
+    contentStyle.background = 'rgba(68,187,102, 1)';
     contentStyle.color = 'rgba(76, 86, 106, 1)';
-    arrowStyle.borderRight = '10px solid rgba(163, 189, 140, 1)';
+    arrowStyle.borderRight = '10px solid rgba(68,187,102, 1)';
   } else if (batteryPercentage < 60) {
     contentStyle.background = 'rgba(235, 203, 139, 1)';
     contentStyle.color = 'rgba(76, 86, 106, 1)';
