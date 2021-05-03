@@ -39,3 +39,4 @@ export const rightSide = {
   lineHeight: '20px',
   color: 'rgba(216, 222, 232, 1)'
 }
+

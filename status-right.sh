@@ -86,6 +86,13 @@ LOAD_AVERAGE=$(sysctl -n vm.loadavg | awk '{print $2}')
 VOLUME=$(osascript -e 'output volume of (get volume settings)')
 IS_MUTED=$(osascript -e 'output muted of (get volume settings)')
 
+if [ "${VOLUME}" == "missing value" ]; then
+  VOLUME=0
+fi
+if [ "${IS_MUTED}" == "missing value" ]; then
+  IS_MUTED=false
+fi
+
 HDD_TOTAL_BYTES=$(df | grep -m 1 /disk1 | awk -F" " '{print $2}')
 HDD_FREE_BYTES=$(df | grep -m 1 /disk1 | awk -F" " '{print $4}')
 
