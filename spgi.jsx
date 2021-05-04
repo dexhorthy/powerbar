@@ -70,7 +70,7 @@ export const render = ({output}) => {
       </div>
 
       <div style={spgi}>
-         <div style={{width: "2px"}}/>
+         <div style={{width: "5px"}}/>
   
          <div style={{marginTop: '3px'}}>{" $" + parts[1] + " "}</div>
          <div style={{width: "5px"}}/>
