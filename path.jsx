@@ -18,13 +18,12 @@ export const icon = {
   bottom: '0px',
   right: '0px',
   left: '10%',
-  WebkitBackdropFilter: 'blur(15px)'
 }
 
 export const path = {
-  background: 'rgba(0,0,0,0)',
+  background: 'rgba(46, 51, 64, .2)',
   color: '#eee',
-  width: '10%',
+  width: '127px',
   height: '20px',
   position: 'fixed',
   display: 'flex',
@@ -34,7 +33,6 @@ export const path = {
   bottom: '0px',
   right: '0px',
   left: '11%',
-  WebkitBackdropFilter: 'blur(15px)'
 }
 
 
@@ -70,9 +68,9 @@ export const render = ({output}) => {
       </div>
 
       <div style={path}>
-         ${parts[1] + " "}
+         <div style={{marginTop: '3px'}}>{" $" + parts[1] + " "}</div>
          <div style={{width: "5px"}}/>
-         <div style={{color}}>{"(" + parts[2]})</div>
+         <div style={{color, marginTop: '3px'}}>{"(" + parts[2]})</div>
       </div>
     </div>
   )
